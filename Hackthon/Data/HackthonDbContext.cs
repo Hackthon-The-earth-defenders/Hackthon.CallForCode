@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Hackthon
 {
-    public class HackthonDbContext : IdentityDbContext<IdentityUser<Guid>, IdentityRole<Guid>, Guid>
+    public class HackthonDbContext : IdentityDbContext<Usuario, Funcao, Guid>
     {
         public HackthonDbContext(DbContextOptions<HackthonDbContext> options)
             : base(options)
