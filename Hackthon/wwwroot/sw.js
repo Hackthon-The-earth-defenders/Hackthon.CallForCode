@@ -3,7 +3,7 @@
 importScripts('./db-helpers.js');
 
 if (workbox) {
-    console.log("Yay! Workbox is loaded !");
+    console.log("Yay! Aqui sempre funciona!");
     workbox.precaching.precacheAndRoute([]);
 
     /*  cache images in the e.g others folder; edit to other folders you got
@@ -14,7 +14,7 @@ if (workbox) {
         new RegExp('/home'),
         new workbox.strategies.NetworkFirst({
             // use a custom cache name
-            cacheName: "ggi-doc-cache",
+            cacheName: "massacration-doc-cache",
         })
     );
 
@@ -67,5 +67,5 @@ if (workbox) {
     self.openDB();
 
 } else {
-    console.log("Oops! Workbox didn't load ");
+    console.log("Oops! Quase sempre funciona ");
 }
