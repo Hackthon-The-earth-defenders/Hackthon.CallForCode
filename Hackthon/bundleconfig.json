@@ -1,0 +1,153 @@
+[
+    {
+        "outputFileName": "wwwroot/bundler/app.min.css",
+        "inputFiles": [
+            "node_modules\\bootstrap\\dist\\css\\bootstrap.css",
+            "node_modules\\@fortawesome\\fontawesome-free\\css\\all.min.css",
+            "wwwroot/css/smartadmin-production-plugins.css",
+            "wwwroot/css/smartadmin-production.css",
+            "wwwroot/css/app.css"
+        ],
+        "minify": {
+            "enabled": true,
+            "adjustRelativePaths": false
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/appDev.css",
+        "inputFiles": [
+            //  "node_modules\\normalize.css\\normalize.css",
+            "node_modules\\bootstrap\\dist\\css\\bootstrap.min.css",
+            //"wwwroot/css/all.css",
+            "node_modules\\@fortawesome\\fontawesome-free\\css\\all.min.css",
+            // "node_modules\\select2\\dist\\css\\select2.css",
+            //"wwwroot/css/select2-bootstrap.css",
+            "wwwroot/css/smartadmin-production-plugins.css",
+            "wwwroot/css/smartadmin-production.css",
+            "wwwroot/css/app.css"
+        ],
+        "minify": {
+            "enabled": true,
+            "adjustRelativePaths": false
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/dataTablesCOI.min.js",
+        "inputFiles": [
+            "node_modules\\datatables.net\\js\\jquery.dataTables.js",
+            "node_modules\\datatables.net-bs\\js\\dataTables.bootstrap.js",
+            "wwwroot/js/ConfigDefaultDataTables.js"
+        ],
+        "minify": {
+            "enabled": false,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/app.min.js",
+        "inputFiles": [
+            "wwwroot/js/app.config.js",
+            "wwwroot/js/notification/SmartNotification.js",
+            "wwwroot/js/smartwidgets/jarvis.widget.js",
+            "node_modules\\jquery.maskedinput\\src\\jquery.maskedinput.js",
+            "node_modules\\select2\\dist\\js\\select2.js",
+            "wwwroot/js/app.js",
+
+            "node_modules\\jquery-ui-touch-punch\\jquery.ui.touch-punch.js",
+            "node_modules\\fastclick\\lib\\fastclick.js"
+
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/validate.js",
+        "inputFiles": [
+            "node_modules\\jquery-validation\\dist\\jquery.validate.js",
+            "node_modules\\jquery-validation\\dist\\localization\\messages_pt_BR.min.js",
+            "node_modules\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/pace-js.min.js",
+        "inputFiles": [
+            "node_modules\\pace-js\\pace.min.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/bootstrap.min.js",
+        "inputFiles": [
+            "node_modules\\bootstrap\\dist\\js\\bootstrap.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/css/bootstrap.min.css",
+        "inputFiles": [
+            "node_modules\\bootstrap\\dist\\css\\bootstrap.css"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/moment.min.js",
+        "inputFiles": [
+            "node_modules\\moment\\src\\moment.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/jquery.min.js",
+        "inputFiles": [
+            "node_modules\\jquery\\dist\\jquery.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/jquery-ui.min.js",
+        "inputFiles": [
+            "node_modules\\jquery-ui-dist\\jquery-ui.js"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/bundler/js/jquery-ui.min.css",
+        "inputFiles": [
+            "node_modules\\jquery-ui-dist\\jquery-ui.css"
+        ],
+        "minify": {
+            "enabled": true,
+            "renameLocals": true
+        }
+    },
+    {
+        "outputFileName": "wwwroot/js/demo.min.js",
+        "inputFiles": [
+            "wwwroot/js/demo.js"
+        ]
+    }
+]

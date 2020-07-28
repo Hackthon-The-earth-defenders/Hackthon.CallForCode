@@ -1,0 +1,31 @@
+<environment include="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.js" asp-fallback-src="~/bundler/js/jquery.min.js" asp-fallback-test="window.jQuery" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.4.1/bootstrap.js" asp-fallback-src="~/bundler/js/bootstrap.min.js" asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous"></script>
+
+    <script src="~/bundler/js/ggi.min.js" asp-append-version="true"></script>
+</environment>
+
+
+<environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js" asp-fallback-src="~/bundler/js/jquery.min.js" asp-fallback-test="window.jQuery" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.4.1/bootstrap.min.js" asp-fallback-src="~/bundler/js/bootstrap.min.js" asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous"></script>
+    <script src="~/bundler/js/app.min.js" asp-append-version="true"></script>
+</environment>
+
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="~/bundler/js/pace-js.min.js"></script>
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+<script src="~/sw1.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () =>
+            navigator.serviceWorker.register('/sw.js', {
+                scope: '/',
+            }));
+    }
+
+    var retorno = ('serviceWorker' in navigator) ? "Sim" : "Não";
+    document.getElementById('SupportServiceWork').innerHTML = retorno;
+</script>
+<!--[if IE 8]>
+    <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+<![endif]-->

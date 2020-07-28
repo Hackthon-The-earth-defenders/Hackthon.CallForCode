@@ -1,0 +1,62 @@
+@using System.Collections.Generic
+@using System.Linq
+@using Microsoft.AspNetCore.Http
+@model LoginViewModel
+@inject SignInManager<Hackthon.Models.Usuario> SignInManager
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+        <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+
+            <div class="card card-container">
+
+                <img id="profile-img" class="profile-img-card" src="~/img/Logo-GGI-Atibaia100pxTra.png" />
+
+                @*<img id="profile-img" class="profile-img-card" src="~/img/logoCOI.png" />*@
+                <p id="profile-name" class="profile-name-card"></p>
+
+
+
+                <h4>Utilize seu login para acessar.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" autocomplete="off" value="leonardo@wmb.com.br" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" autocomplete="off" value="123456" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                        <div class="checkbox">
+                            <label asp-for="RememberMe">
+                                <input asp-for="RememberMe" />
+                                @Html.DisplayNameFor(m => m.RememberMe)
+                            </label>
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-primary btn-block btn-signin">Entrar</button>
+                </div>
+                @*<div class="form-group">
+                        <a href="#" onclick="OpenSenha()" class="forgot-password">
+                            Esqueceu a senha?
+                        </a>
+                    </div>*@
+            </div>
+        </form>
+    </div>
+
+</div>
+

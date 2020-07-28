@@ -1,0 +1,46 @@
+{
+    "name": "Massacration.web",
+    "version": "1.9.0",
+    "description": "Massacration Call For Code",
+    "main": "wwwroot/js/app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://bitbucket.org/myorange/smartadmin-core-2.git"
+    },
+    "keywords": [
+        "smartadmin",
+        "template",
+        "bootstrap",
+        ".net",
+        "core"
+    ],
+    "author": "Massacration team",
+    "license": "ISC",
+    "homepage": "https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/",
+    "dependencies": {
+        "@aspnet/signalr": "1.1.4",
+        "@fortawesome/fontawesome-free": "^5.11.2",
+        "axios": "0.19.0",
+        "bootstrap": "3.4.1",
+        "datatables.net-bs": "1.10.20",
+        "datatables.net-colreorder-bs": "^1.5.2",
+        "fastclick": "^1.0.6",
+        "inputmask": "^4.0.8",
+        "jquery": "^3.4.1",
+        "jquery-ajax-unobtrusive": "^3.2.6",
+        "jquery-ui-dist": "^1.12.1",
+        "jquery-ui-touch-punch": "^0.2.3",
+        "jquery-validation": "^1.19.0",
+        "jquery-validation-unobtrusive": "^3.2.11",
+        "jquery.maskedinput": "^1.4.1",
+        "moment": "^2.24.0",
+        "normalize.css": "^8.0.1",
+        "pace-js": "^1.0.2",
+        "select2": "^4.0.12",
+        "toastr": "^2.1.4",
+        "v-select2-component": "^0.4.1"
+    }
+}

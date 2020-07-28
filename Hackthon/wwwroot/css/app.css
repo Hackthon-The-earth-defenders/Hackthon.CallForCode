@@ -1,0 +1,193 @@
+/*.modal-dialog,
+.modal-content {
+    height: 80%;
+}*/
+input[type="color"] {
+    -webkit-appearance: none;
+    padding: 1px;
+    border: none;
+    height: 40px;
+}
+.select2-search:before {
+    font-weight: 900 !important;
+}
+
+.quadradoCat {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(137, 137, 137, 0.3);
+    float: left;
+    margin-right: 10px;
+}
+.panel-danger {
+    border-color: #a3070d !important
+}
+
+.panel-danger > .panel-heading {
+    color: #fff !important;
+    background-color: #a30000 !important;
+    border-color: #a30000 !important
+}
+
+.modal-body {
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+iframe#atalhos {
+    position: fixed;
+    border: 0px none transparent;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+div.validation-summary-valid {
+    display: none;
+}
+
+.logoCoi {
+    padding-top: 40px;
+    margin: 0 auto;
+    display: block;
+}
+.logoCoiMobile {
+    width: 40px !important;
+    POSITION: RELATIVE !important;
+    top: -5px !important;
+    left: -40px !important;
+}
+.textoLogoCoi {
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.textoLogin {
+    top: 15px;
+    position: absolute;
+    right: -50px;
+        font-size: 12px;
+}
+.text-error {
+    color: red;
+}
+
+/*Substituindo o bootstrap*/
+
+
+.btn-danger {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+}
+.btn-danger:hover {
+    background-color: #871919;
+    border-color: #871919;
+}
+.table-responsive {
+    min-height: .01% !important;
+     overflow-x: inherit; 
+}
+/*FIM Substituindo o bootstrap*/
+
+
+
+.form-peq {
+    max-width: 150px;
+}
+.form-med {
+    max-width: 250px;
+}
+.form-Atencao {
+    background-color: #eeff99;
+    border: solid 1px #5e682e;
+}
+
+.FontBranca {
+    color: #FFFFFF;
+}
+
+#logotipoTxt {
+    font-family: 'Alfa Slab One', cursive;
+    content: "COI";
+    font-size: 27px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: -5px;
+    display: block
+}
+
+.centroStatus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.TituloPagando {
+    font-size: 120%;
+}
+
+.TituloPequeno {
+    font-size: 9px;
+}
+
+.panel-footer {
+    min-height: 60px;
+}
+
+.DivFormata {
+    border: solid 1px #F0F1F1;
+    border-radius: 3px;
+    text-align: center;
+    min-height: 250px;
+}
+.centraliza {
+    margin: 0px auto;
+    text-align: center
+}
+.FontMes {
+    font-size: 16px;
+    font-stretch: condensed;
+    font-weight: bold;
+    /*color: #FFF900;*/
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+@media (max-width: 767px) {
+    .minifyme {
+        visibility: hidden !important
+    }
+}
+#extr-page h4.paragraph-header {
+    width: auto;
+}
+
+#extr-page .smart-form .alert {
+    margin: 4px;
+}
+
+    #extr-page .smart-form .alert li {
+        margin-left: 14px;
+        list-style: none;
+    }
+
+        #extr-page .smart-form .alert li:before {
+            content: "\f071";
+            font-family: FontAwesome;
+            position: absolute;
+            left: 14px;
+        }
+
+#extr-page .smart-form div + fieldset {
+    padding-top: 15px;
+}
