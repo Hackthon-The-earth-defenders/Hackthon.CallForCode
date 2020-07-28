@@ -1,4 +1,4 @@
-self.dbName = 'ggi-db';
+self.dbName = 'massacration-db';
 self.dbVersion = 1;
 
 // Opens the DB, adding the necessary object stores if needed.

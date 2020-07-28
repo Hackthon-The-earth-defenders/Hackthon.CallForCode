@@ -1,7 +1,7 @@
-self.staticCacheName = 'cache-ggi-static';
+self.staticCacheName = 'cache-massacration-static';
 self.staticCacheVersion = 'v1';
 self.staticCacheId = `${self.staticCacheName}-${self.staticCacheVersion}`;
-self.runtimeCacheName = 'cache-ggi-runtime';
+self.runtimeCacheName = 'cache-massacration-runtime';
 if ('function' === typeof importScripts) {
     self.importScripts('./cache-manifest.js', './db-helpers.js');
 }

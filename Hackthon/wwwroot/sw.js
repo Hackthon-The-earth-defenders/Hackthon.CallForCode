@@ -38,7 +38,7 @@ if (workbox) {
         // use cache but update in the background ASAP
         new workbox.strategies.NetworkFirst({
             // use a custom cache name
-            cacheName: "ggi-static-cache",
+            cacheName: "Massacration-static-cache",
         })
     );
 
