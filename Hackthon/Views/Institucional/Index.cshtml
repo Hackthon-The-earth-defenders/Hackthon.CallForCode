@@ -1,0 +1,608 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("_InstHeader")
+</head>
+
+<body>
+    <main>
+        @await Html.PartialAsync("_InstMenu")
+
+
+        @await Html.PartialAsync("_InstCarrousel")
+
+        @await Html.PartialAsync("_InstSobre")
+
+        @await Html.PartialAsync("_InstPorque")
+
+        <section id="services" class="g-py-30 g-py-80--md">
+            <div class="container text-center u-bg-overlay__inner g-max-width-770 g-mb-30 g-mb-70--md">
+                <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-30">
+                    <h3 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-20">Services</h3>
+                    <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-weight-700 g-font-size-30 g-font-size-40--md g-theme-color-gray-dark-v1 mb-0">What we do</h2>
+                </div>
+
+                <p class="mb-0">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel odio.</p>
+            </div>
+
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg">
+                        <div class="text-center"
+                             data-animation="fadeInUp"
+                             data-animation-duration="1500">
+                            <span class="u-icon-v2 u-icon-size--3xl g-font-size-30 g-font-size-40--md g-color-primary g-brd-10 g-brd-gray-light-v5 g-rounded-50x g-mb-25"><i class="icon-magic-wand"></i></span>
+                            <h3 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-color-black g-mb-15">Web Design</h3>
+                            <p class="mb-0">Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg">
+                        <div class="text-center"
+                             data-animation="fadeInUp"
+                             data-animation-duration="1750">
+                            <span class="u-icon-v2 u-icon-size--3xl g-font-size-30 g-font-size-40--md g-color-primary g-brd-10 g-brd-gray-light-v5 g-rounded-50x g-mb-25"><i class="icon-diamond"></i></span>
+                            <h3 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-color-black g-mb-15">Graphic Design</h3>
+                            <p class="mb-0">Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--md">
+                        <div class="text-center"
+                             data-animation="fadeInUp"
+                             data-animation-duration="2000">
+                            <span class="u-icon-v2 u-icon-size--3xl g-font-size-30 g-font-size-40--md g-color-primary g-brd-10 g-brd-gray-light-v5 g-rounded-50x g-mb-25"><i class="icon-calculator"></i></span>
+                            <h3 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-color-black g-mb-15">UI/UX</h3>
+                            <p class="mb-0">Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center"
+                             data-animation="fadeInUp"
+                             data-animation-duration="2250">
+                            <span class="u-icon-v2 u-icon-size--3xl g-font-size-30 g-font-size-40--md g-color-primary g-brd-10 g-brd-gray-light-v5 g-rounded-50x g-mb-25"><i class="icon-badge"></i></span>
+                            <h3 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-color-black g-mb-15">Branding</h3>
+                            <p class="mb-0">Quisque rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Row -->
+            </div>
+        </section>
+
+        <section id="skills" class="g-py-30 g-py-80--md">
+            <div class="container text-center u-bg-overlay__inner g-max-width-770 g-mb-30 g-mb-70--md">
+                <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-30">
+                    <h3 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-20">Skills</h3>
+                    <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-weight-700 g-font-size-30 g-font-size-40--md g-theme-color-gray-dark-v1 mb-0">Our best side</h2>
+                </div>
+
+                <p class="mb-0">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio. Donec eu nulla leo. Vivamus risus lacus, viverra eu maximus non, tincidunt sodales massa.</p>
+            </div>
+
+            <div class="container">
+                <div class="row g-mb-50">
+                    <!-- Counter Pie Chart -->
+                    <div class="col-md-6 col-lg-3 text-center g-mb-50 g-mb-0--lg">
+                        <div class="js-pie g-font-weight-700 g-mb-35"
+                             data-circles-value="84"
+                             data-circles-max-value="100"
+                             data-circles-bg-color="#f8f8f8"
+                             data-circles-fg-color="#e74c3c"
+                             data-circles-radius="80"
+                             data-circles-stroke-width="10"
+                             data-circles-duration="2000"
+                             data-circles-scroll-animate="true"
+                             data-circles-font-size="56"
+                             data-circles-color="#000">
+                        </div>
+
+                        <h4 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Happy Clients</h4>
+                        <p class="mb-0">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio maximus efficitur</p>
+                    </div>
+                    <!-- End Counter Pie Chart -->
+                    <!-- Counter Pie Chart -->
+                    <div class="col-md-6 col-lg-3 text-center g-mb-50 g-mb-0--lg">
+                        <div class="js-pie g-font-weight-700 g-mb-35"
+                             data-circles-value="34"
+                             data-circles-max-value="100"
+                             data-circles-bg-color="#f8f8f8"
+                             data-circles-fg-color="#e74c3c"
+                             data-circles-radius="80"
+                             data-circles-stroke-width="10"
+                             data-circles-duration="2000"
+                             data-circles-scroll-animate="true"
+                             data-circles-font-size="56"
+                             data-circles-color="#000">
+                        </div>
+
+                        <h4 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Completed Projects</h4>
+                        <p class="mb-0">Quisque vestibulum sem eget nibh commodo, non elementum nibh pulvinar. Duis mattis venenatis tortor iaculis ultricies</p>
+                    </div>
+                    <!-- End Counter Pie Chart -->
+                    <!-- Counter Pie Chart -->
+                    <div class="col-md-6 col-lg-3 text-center g-mb-50 g-mb-0--md">
+                        <div class="js-pie g-font-weight-700 g-mb-35"
+                             data-circles-value="35"
+                             data-circles-max-value="100"
+                             data-circles-bg-color="#f8f8f8"
+                             data-circles-fg-color="#e74c3c"
+                             data-circles-radius="80"
+                             data-circles-stroke-width="10"
+                             data-circles-duration="2000"
+                             data-circles-scroll-animate="true"
+                             data-circles-font-size="56"
+                             data-circles-color="#000">
+                        </div>
+
+                        <h4 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Our Team</h4>
+                        <p class="mb-0">Nullam in diam arcu. Etiam nisl justo, tempor scelerisque sagittis vel, bibendum vestibulum metus. Donec eget nunc neque</p>
+                    </div>
+                    <!-- End Counter Pie Chart -->
+                    <!-- Counter Pie Chart -->
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="js-pie g-font-weight-700 g-mb-35"
+                             data-circles-value="67"
+                             data-circles-max-value="100"
+                             data-circles-bg-color="#f8f8f8"
+                             data-circles-fg-color="#e74c3c"
+                             data-circles-radius="80"
+                             data-circles-stroke-width="10"
+                             data-circles-duration="2000"
+                             data-circles-scroll-animate="true"
+                             data-circles-font-size="56"
+                             data-circles-color="#000">
+                        </div>
+
+                        <h4 class="h6 text-uppercase g-font-weight-700 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Countries</h4>
+                        <p class="mb-0">Rhoncus euismod pulvinar. Nulla non arcu at lectus. Vestibulum fringilla velit rhoncus euismod rhoncus turpis</p>
+                    </div>
+                    <!-- End Counter Pie Chart -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Web development</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">85%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">App development</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">CSS3 and HTML5</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">70%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Branding</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 g-px-30 g-px-15--md g-mb-30 g-mb-0--md">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Social media</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">90%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 g-px-30 g-px-15--md">
+                        <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-700 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">Wordpress</h6>
+
+                        <div class="js-hr-progress-bar progress g-height-10 rounded-0 g-overflow-visible g-mb-20">
+                            <div class="js-hr-progress-bar-indicator progress-bar g-pos-rel g-theme-bg-gray-dark-v1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                <div class="text-center u-progress__pointer-v1 g-font-weight-700 g-font-size-11 g-color-white g-bg-primary-dark-v1 g-rounded-50x">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="g-py-30 g-pb-80--md">
+            <div class="u-bg-overlay g-theme-bg-gray-dark-v1-opacity-0_95--after g-pt-30 g-pt-80--md g-pb-250" style="background-image: url(assets/img-temp/1400x585/img1.jpg);">
+                <div class="container text-center u-bg-overlay__inner g-max-width-770">
+                    <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-30">
+                        <h3 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-20">Our team</h3>
+                        <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-weight-700 g-font-size-30 g-font-size-40--md g-color-white mb-0">Work with professionals</h2>
+                    </div>
+
+                    <p class="g-color-white-opacity-0_5 mb-0">Praesent eu nibh malesuada, condimentum nibh hendrerit, viverra sem. Nulla porttitor eget ante ullamcorper convallis. Integer dictum lorem arcu, eget tempus nulla accumsan id.</p>
+                </div>
+            </div>
+
+            <div class="container g-mt-minus-200">
+                <!-- Team Block -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 g-mb-30 g-mb-0--lg">
+                        <div class="text-center">
+                            <!-- Figure -->
+                            <figure class="g-pos-rel g-parent g-mb-30">
+                                <!-- Figure Image -->
+                                <img class="w-100" src="assets/img-temp/270x450/img1.jpg" alt="Image Description">
+                                <!-- End Figure Image -->
+                                <!-- Figure Caption -->
+                                <figcaption class="g-pos-abs g-top-0 g-left-0 g-flex-middle w-100 h-100 g-bg-primary-dark-v1-opacity-0_8 opacity-0 g-opacity-1--parent-hover g-pa-20 g-transition-0_2 g-transition--ease-in">
+                                    <q class="text-uppercase u-quote-v1 g-flex-middle-item g-line-height-1_4 g-font-weight-700 g-font-size-16 g-color-white">Changing your mind and changing world</q>
+                                    <!-- Figure Social Icons -->
+                                    <ul class="list-inline g-flex-middle-item--bottom g-mb-30 mt-0">
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Figure Social Icons -->
+                                </figcaption>
+                                <!-- End Figure Caption -->
+                            </figure>
+                            <!-- End Figure -->
+                            <!-- Figure Info -->
+                            <em class="d-block text-uppercase g-font-style-normal g-font-weight-700 g-font-size-11 g-color-primary g-mb-5">Photographer</em>
+                            <h4 class="text-uppercase g-font-weight-700 g-font-size-18 g-theme-color-gray-dark-v1 g-mb-7">Ralf Smith</h4>
+                            <p class="g-font-size-13 g-theme-color-gray-light-v3 mb-0">head photographer</p>
+                            <!-- End Figure Info-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 g-mb-30 g-mb-0--lg">
+                        <div class="text-center">
+                            <!-- Figure -->
+                            <figure class="g-pos-rel g-parent g-mb-30">
+                                <!-- Figure Image -->
+                                <img class="w-100" src="assets/img-temp/270x450/img2.jpg" alt="Image Description">
+                                <!-- End Figure Image -->
+                                <!-- Figure Caption -->
+                                <figcaption class="g-pos-abs g-top-0 g-left-0 g-flex-middle w-100 h-100 g-bg-primary-dark-v1-opacity-0_8 opacity-0 g-opacity-1--parent-hover g-pa-20 g-transition-0_2 g-transition--ease-in">
+                                    <q class="text-uppercase u-quote-v1 g-flex-middle-item g-line-height-1_4 g-font-weight-700 g-font-size-16 g-color-white">Changing your mind and changing world</q>
+                                    <!-- Figure Social Icons -->
+                                    <ul class="list-inline g-flex-middle-item--bottom g-mb-30 mt-0">
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Figure Social Icons -->
+                                </figcaption>
+                                <!-- End Figure Caption -->
+                            </figure>
+                            <!-- End Figure -->
+                            <!-- Figure Info -->
+                            <em class="d-block text-uppercase g-font-style-normal g-font-weight-700 g-font-size-11 g-color-primary g-mb-5">Designer</em>
+                            <h4 class="text-uppercase g-font-weight-700 g-font-size-18 g-theme-color-gray-dark-v1 g-mb-7">Monica Gaudy</h4>
+                            <p class="g-font-size-13 g-theme-color-gray-light-v3 mb-0">head photographer</p>
+                            <!-- End Figure Info-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 g-mb-30 g-mb-0--md">
+                        <div class="text-center">
+                            <!-- Figure -->
+                            <figure class="g-pos-rel g-parent g-mb-30">
+                                <!-- Figure Image -->
+                                <img class="w-100" src="assets/img-temp/270x450/img3.jpg" alt="Image Description">
+                                <!-- End Figure Image -->
+                                <!-- Figure Caption -->
+                                <figcaption class="g-pos-abs g-top-0 g-left-0 g-flex-middle w-100 h-100 g-bg-primary-dark-v1-opacity-0_8 opacity-0 g-opacity-1--parent-hover g-pa-20 g-transition-0_2 g-transition--ease-in">
+                                    <q class="text-uppercase u-quote-v1 g-flex-middle-item g-line-height-1_4 g-font-weight-700 g-font-size-16 g-color-white">Changing your mind and changing world</q>
+                                    <!-- Figure Social Icons -->
+                                    <ul class="list-inline g-flex-middle-item--bottom g-mb-30 mt-0">
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Figure Social Icons -->
+                                </figcaption>
+                                <!-- End Figure Caption -->
+                            </figure>
+                            <!-- End Figure -->
+                            <!-- Figure Info -->
+                            <em class="d-block text-uppercase g-font-style-normal g-font-weight-700 g-font-size-11 g-color-primary g-mb-5">Co-founder</em>
+                            <h4 class="text-uppercase g-font-weight-700 g-font-size-18 g-theme-color-gray-dark-v1 g-mb-7">Julia Exon</h4>
+                            <p class="g-font-size-13 g-theme-color-gray-light-v3 mb-0">head photographer</p>
+                            <!-- End Figure Info-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <!-- Figure -->
+                            <figure class="g-pos-rel g-parent g-mb-30">
+                                <!-- Figure Image -->
+                                <img class="w-100" src="assets/img-temp/270x450/img4.jpg" alt="Image Description">
+                                <!-- End Figure Image -->
+                                <!-- Figure Caption -->
+                                <figcaption class="g-pos-abs g-top-0 g-left-0 g-flex-middle w-100 h-100 g-bg-primary-dark-v1-opacity-0_8 opacity-0 g-opacity-1--parent-hover g-pa-20 g-transition-0_2 g-transition--ease-in">
+                                    <q class="text-uppercase u-quote-v1 g-flex-middle-item g-line-height-1_4 g-font-weight-700 g-font-size-16 g-color-white">Changing your mind and changing world</q>
+                                    <!-- Figure Social Icons -->
+                                    <ul class="list-inline g-flex-middle-item--bottom g-mb-30 mt-0">
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item g-mx-5">
+                                            <a class="u-icon-v3 u-icon-size--xs g-width-35 g-height-35 g-color-primary g-color-white--hover g-bg-white g-bg-primary--hover" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- End Figure Social Icons -->
+                                </figcaption>
+                                <!-- End Figure Caption -->
+                            </figure>
+                            <!-- End Figure -->
+                            <!-- Figure Info -->
+                            <em class="d-block text-uppercase g-font-style-normal g-font-weight-700 g-font-size-11 g-color-primary g-mb-5">Co-founder</em>
+                            <h4 class="text-uppercase g-font-weight-700 g-font-size-18 g-theme-color-gray-dark-v1 g-mb-7">Jacob Assange</h4>
+                            <p class="g-font-size-13 g-theme-color-gray-light-v3 mb-0">head photographer</p>
+                            <!-- End Figure Info-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Team Block -->
+            </div>
+        </section>
+
+        <footer class="text-center">
+            <div class="g-py-30 g-py-80--md">
+                <div class="container">
+                    <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary">
+                        <h4 class="g-line-height-1 g-font-weight-700 g-font-size-12 g-color-primary g-mb-20">Contact us</h4>
+                        <h2 class="u-heading-v2__title g-font-weight-700 g-font-size-30 g-font-size-40--md g-theme-color-gray-dark-v1">Get in touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <address class="row g-color-gray-dark-v4 mb-0">
+                    <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
+                        <i class="icon-line icon-map d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                        <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Address</h3>
+                        <strong class="g-font-size-16 g-color-white">In sed lectus tincidunt</strong>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
+                        <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                        <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone number</h3>
+                        <strong class="g-font-size-16 g-color-white">+48 555 2566 112</strong>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
+                        <i class="icon-line icon-envelope-letter d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                        <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Email</h3>
+                        <a class="g-font-size-16 g-color-white" href="mailto:info@htmlstream.com"><strong>info@htmlstream.com</strong></a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
+                        <i class="icon-line icon-call-in d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                        <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Call free</h3>
+                        <strong class="g-font-size-16 g-color-white">+48 555 1258 987</strong>
+                    </div>
+                </address>
+            </div>
+
+            <div id="contact" class="g-color-gray-dark-v5 g-bg-gray-light-v5 g-py-30 g-py-70--md">
+                <div class="container">
+                    <div class="u-heading-v8-2 g-mb-60">
+                        <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-font-secondary g-color-gray-dark-v2 g-mb-25">Have a questions?</h2>
+                        <p class="mb-0">Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum.</p>
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group g-mb-30">
+                                <input id="inputGroup1_1" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="text" placeholder="Your name">
+                            </div>
+
+                            <div class="col-md-6 form-group g-mb-30">
+                                <input id="inputGroup1_2" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="tel" placeholder="Your phone">
+                            </div>
+
+                            <div class="col-md-6 form-group g-mb-30">
+                                <select id="inputGroup1_3" class="js-custom-select form-control h-100 text-left u-form-control u-select-v1 g-font-size-default g-theme-color-gray-dark-v2 g-bg-white g-brd-white g-brd-gray-light-v3--hover g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" style="width: 100%;"
+                                        data-placeholder="Department"
+                                        data-open-icon="fa fa-caret-down"
+                                        data-close-icon="fa fa-caret-up">
+                                    <option></option>
+                                    <option value="Department1">Department1</option>
+                                    <option value="Department2">Department2</option>
+                                    <option value="Department3">Department3</option>
+                                    <option value="Department4">Department4</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 form-group g-mb-30">
+                                <input id="inputGroup1_4" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="text" placeholder="Subject">
+                            </div>
+
+                            <div class="col-md-12 form-group g-mb-30">
+                                <textarea id="inputGroup1_5" class="form-control g-resize-none g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" rows="6" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 rounded-0 g-px-25 g-py-10 mb-0" type="submit" role="button">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google (Map) [custom] -->
+            <div class="g-pos-rel g-height-500">
+                <div id="gMap" class="js-g-map g-pos-abs w-100 h-100"
+                     data-type="custom"
+                     data-lat="40.674"
+                     data-lng="-73.946"
+                     data-zoom="12"
+                     data-title="Agency"
+                     data-styles='[
+                 ["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]],
+                 ["", "labels", [{"visibility":"on"}]],
+                 ["water", "", [{"color":"#bac6cb"}]]
+               ]'
+                     data-pin="true"
+                     data-pin-icon="assets/img/pin.png"></div>
+            </div>
+            <!-- End Google (Map) [custom] -->
+
+            <div class="g-color-white g-bg-primary-dark-v1 g-py-40 g-px-15">
+                <a class="d-inline-block g-mb-30" href="/">
+                    <img class="img-fluid g-width-130" src="assets/img/logo-light.png" alt="Image description">
+                </a>
+                <p class="g-color-white-opacity-0_7 g-mb-30">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo odio maximus efficitur</p>
+                <ul class="list-inline d-inline-block g-mb-30">
+                    <li class="list-inline-item g-mr-10">
+                        <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item g-mr-10">
+                        <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in" href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                    <li class="list-inline-item g-mr-10">
+                        <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in" href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <ul class="list-inline text-uppercase g-font-weight-700 g-font-size-11 mb-0">
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">About</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Why we</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Services</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Work process</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Skills</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Team</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Testimonials</a>
+                    </li>
+                    <li class="list-inline-item g-px-12--md">
+                        <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <a class="js-go-to u-go-to-v1" href="#"
+           data-type="fixed"
+           data-position='{
+           "bottom": 15,
+           "right": 15
+         }'
+           data-offset-top="400"
+           data-compensation="#js-header"
+           data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+
+    @await Html.PartialAsync("_InstScript")
+
+</body>
+</html>
