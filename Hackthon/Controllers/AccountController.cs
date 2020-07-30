@@ -1,8 +1,11 @@
 ﻿using HackthAccountViewModelson.ViewModels;
 using Hackthon.Extensions;
 using Hackthon.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Hackthon.Controllers
@@ -28,10 +31,52 @@ namespace Hackthon.Controllers
             return View();
         }
 
-        [HttpGet]
-        public IActionResult Register(string returnUrl = null)
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
-            ViewData["TipoCadastro"] = this.MontarSelectListParaEnum(new Usuario().TipoCadastro);
+            ViewData["ReturnUrl"] = returnUrl;
+            if (ModelState.IsValid)
+            {
+
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    return RedirectToLocal(returnUrl);
+                }
+              
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Inválido login!.");
+                    return View(model);
+                }
+            }
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
+
+        [HttpGet]
+        public IActionResult Register(string returnUrl = null, int? tipo=null)
+        {
+            List<SelectListItem> montaEnum;
+            if (tipo != null) {
+                var user = new Usuario
+                {
+                    TipoCadastro = (Models.Enums.TipoUsuario)tipo
+                };
+
+                montaEnum = this.MontarSelectListParaEnum(user.TipoCadastro);
+            }
+            else
+            {
+                montaEnum = this.MontarSelectListParaEnum(new Usuario().TipoCadastro);
+
+            }
+            ViewData["TipoCadastro"] = montaEnum;
+
             ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
@@ -57,11 +102,9 @@ namespace Hackthon.Controllers
 
                     //var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
                     //await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
-
-                    await _signInManager.SignInAsync(model, isPersistent: false);
+                    
                     TempData["Confirm"] = "<script>$(document).ready(function () {MostraConfirm('Sucesso', 'Gravado com sucesso.');})</script>";
-                    return RedirectToAction("Index", "Home");
-                    //return RedirectToLocal(returnUrl);
+                    return RedirectToAction("Login", "Account");
                 }
                 AddErrors(result);
             }
@@ -72,7 +115,19 @@ namespace Hackthon.Controllers
 
             return View(model);
         }
-
+        [NonAction]
+        private IActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            else
+            {
+                return RedirectToAction(nameof(AppController.Index), "Index");
+            }
+        }
+        [NonAction]
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)
