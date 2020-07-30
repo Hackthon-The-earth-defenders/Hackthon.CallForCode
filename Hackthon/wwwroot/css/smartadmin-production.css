@@ -13435,7 +13435,8 @@ aside {
     #logo img {
         height: auto;
         padding-left: 3px;
-        width: 50px;
+        width: 40px;
+        padding: 5px;
     }
 
 #activity b.badge {
@@ -19794,7 +19795,7 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
     }
 
         #logo img {
-            width: 50px;
+            width: 40px;
             margin-top: 1px
         }
 
@@ -20248,7 +20249,7 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
     }
 
         #logo img {
-            width: 50px;
+            width: 40px;
         }
 
     /* transparent header button */

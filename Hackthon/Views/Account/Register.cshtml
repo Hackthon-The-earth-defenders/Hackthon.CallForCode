@@ -6,6 +6,7 @@
 @{
     var pageName = "Usuario";
     ViewData["Title"] = pageName;
+    Layout = "~/Views/Shared/_LayoutCadastro.cshtml";
 }
 
 <div class="row">
@@ -23,13 +24,18 @@
 <section id="widget-grid" class="">
     <div class="row">
         <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <form asp-action="lixoCreate">
+            <form asp-action="Register">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title"><i class="fas fa-plus" aria-hidden="true"></i> Cadastro de @pageName</h3>
                     </div>
                     <div class="panel-body">
+                        <div class="form-group">
+                            <label asp-for="TipoCadastro" class="control-label"></label>
+                            <select asp-for="TipoCadastro" class="form-control" asp-items="ViewBag.TipoCadastro"></select>
+                            <span asp-validation-for="TipoCadastro" class="text-danger"></span>
+                        </div>
                         <div class="form-group">
                             <label asp-for="Nome" class="control-label"></label>
                             <input asp-for="Nome" class="form-control" />
@@ -56,15 +62,12 @@
 
                     </div>
                     <div class="panel-footer">
-                        <div>
-                            <input type="submit" value="Cadastrar" class="btn btn-primary pull-right" />
+                        <div class="">
+                            <input type="submit" value="Cadastrar" class="btn btn-primary" />
                         </div>
                     </div>
                 </div>
             </form>
         </article>
-    </div>
-    <div>
-        <a asp-action="Index">Voltar para lista</a>
     </div>
 </section>

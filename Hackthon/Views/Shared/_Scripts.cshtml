@@ -14,7 +14,7 @@
 
 <script data-pace-options='{ "restartOnRequestAfter": true }' src="~/bundler/js/pace-js.min.js"></script>
 @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
-<script src="~/sw1.js"></script>
+@*<script src="~/sw1.js"></script>*@
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () =>
