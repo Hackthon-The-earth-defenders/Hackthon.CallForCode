@@ -27,7 +27,7 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
  - PWA
  - Kubenets IBM
 
-** PrintScreen do projeto**
+**PrintScreen do projeto**
 [https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints "https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints")
 
 **Membros da Equipe:**
