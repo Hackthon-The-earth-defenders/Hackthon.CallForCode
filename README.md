@@ -21,11 +21,18 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
 [The earth defender.pdf](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender.pdf)
 
 **Tecnologias utilizadas:**
+Apesar de termos apenas 4 dias de desenvolvimento, escolhemos tecnologias que nos ajudem com produtividade mas que também tenham qualidade no produto final.
 
  - ASP.Net MVC core 3.1
  - Docker
  - PWA
  - Kubenets IBM
+ 
+ **O que iremos ainda utilizar**
+ - Cloudant - Baseado em CouchDb, para fazemos sync entre o pouchDb e o servidor.
+ - troca do MS SQL por PostgreeSQL - IBM Cloud Databases for PostgreSQL
+ - IBM Cloud Messages for RabbitMQ
+ - Watson Discovery
 
 **PrintScreen do projeto**
 [https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints)
