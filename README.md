@@ -28,7 +28,7 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
 
  - Alejandro
  - Denise
- - Gabriel
  - Junia
  - Leonardo
 
+![Massacration](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/timao.png)
