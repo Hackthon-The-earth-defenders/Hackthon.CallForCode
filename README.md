@@ -26,9 +26,4 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
 
 **Membros da Equipe:**
 
- - Alejandro
- - Denise
- - Junia
- - Leonardo
-
 ![Massacration](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/timao.png)
