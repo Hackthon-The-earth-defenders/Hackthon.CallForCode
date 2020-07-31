@@ -1,6 +1,7 @@
+![](https://img.shields.io/badge/build-passing-brightgreen)  ![](https://img.shields.io/badge/docker%20build-automated-066da5) ![](https://img.shields.io/badge/license-MIT-green)
 
 # Hackthon.CallForCode
-## Equipe: Massacration
+### Equipe: Massacration
 
 ![The Earth Defender Logo](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender%20(2).png)
 
@@ -16,6 +17,7 @@ Acreditamos que uma plataforma que consiga reunir organizações ambientalistas,
 
 Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas, poderiam ser efetivas para atrair e fidelizar os mais jovens, conseguindo mobilizá-los para causas que transformem para melhor o mundo à sua volta, ajudando ao mesmo tempo no processo de difusão e conscientização das ações em curso.
 
+**PDF da apresentação**
 [The earth defender.pdf](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender.pdf)
 
 **Tecnologias utilizadas:**
@@ -24,7 +26,9 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
  - Docker
  - PWA
  - Kubenets IBM
- - 
+
+** PrintScreen do projeto**
+[https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints "https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints")
 
 **Membros da Equipe:**
 
