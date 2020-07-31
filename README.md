@@ -34,6 +34,10 @@ Apesar de termos apenas 4 dias de desenvolvimento, escolhemos tecnologias que no
  - IBM Cloud Messages for RabbitMQ
  - Watson Discovery
 
+### Links para site demo
+- [Site institucional](https://massacration.azurewebsites.net/ "Site institucional")
+- [Tela de login [com senha salva para testes]](https://massacration.azurewebsites.net/account/login "Tela de login [com senha salva para testes]")
+
 **PrintScreen do projeto**
 [https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints)
 
