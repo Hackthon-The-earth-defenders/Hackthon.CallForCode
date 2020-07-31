@@ -14,6 +14,8 @@ Acreditamos que uma plataforma que consiga reunir organizações ambientalistas,
 
 Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas, poderiam ser efetivas para atrair e fidelizar os mais jovens, conseguindo mobilizá-los para causas que transformem para melhor o mundo à sua volta, ajudando ao mesmo tempo no processo de difusão e conscientização das ações em curso.
 
+[The earth defender.pdf](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender.pdf)
+
 **Tecnologias utilizadas:**
 
  - ASP.Net MVC core 3.1
