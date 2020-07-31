@@ -2,6 +2,8 @@
 # Hackthon.CallForCode
 ## Equipe: Massacration
 
+![The Earth Defender Logo](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender%20(2).png)
+
 **Descrição do projeto:**
 
 Um dos maiores desafios para as organizações que desenvolvem ações de proteção ao meio ambiente é o acesso aos recursos necessários para a continuidade das equipes de trabalho, assim como para amplificar as ações e torná-las mais efetivas. 
