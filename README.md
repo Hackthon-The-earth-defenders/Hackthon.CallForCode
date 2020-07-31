@@ -2,6 +2,8 @@
 # Hackthon.CallForCode
 ## Equipe: Massacration
 
+![The Earth Defender Logo](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender%20(2).png)
+
 **Descrição do projeto:**
 
 Um dos maiores desafios para as organizações que desenvolvem ações de proteção ao meio ambiente é o acesso aos recursos necessários para a continuidade das equipes de trabalho, assim como para amplificar as ações e torná-las mais efetivas. 
@@ -14,6 +16,8 @@ Acreditamos que uma plataforma que consiga reunir organizações ambientalistas,
 
 Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas, poderiam ser efetivas para atrair e fidelizar os mais jovens, conseguindo mobilizá-los para causas que transformem para melhor o mundo à sua volta, ajudando ao mesmo tempo no processo de difusão e conscientização das ações em curso.
 
+[The earth defender.pdf](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/The%20earth%20defender.pdf)
+
 **Tecnologias utilizadas:**
 
  - ASP.Net MVC core 3.1
@@ -24,9 +28,4 @@ Acreditamos que estratégias de gamificação, estabelecendo metas e recompensas
 
 **Membros da Equipe:**
 
- - Alejandro
- - Denise
- - Gabriel
- - Junia
- - Leonardo
-
+![Massacration](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/blob/master/timao.png)
