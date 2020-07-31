@@ -38,8 +38,8 @@ Apesar de termos apenas 4 dias de desenvolvimento, escolhemos tecnologias que no
 - [Site institucional](https://massacration.azurewebsites.net/ "Site institucional")
 - [Tela de login [com senha salva para testes]](https://massacration.azurewebsites.net/account/login "Tela de login [com senha salva para testes]")
 
-**Vídeo de apresentação do APP*
-https://youtu.be/6DRbYF-7IVs
+**Vídeo de apresentação do APP**
+[https://youtu.be/6DRbYF-7IVs](https://youtu.be/6DRbYF-7IVs)
 
 **PrintScreen do projeto**
 [https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints](https://github.com/Hackthon-The-earth-defenders/Hackthon.CallForCode/tree/master/prints)
