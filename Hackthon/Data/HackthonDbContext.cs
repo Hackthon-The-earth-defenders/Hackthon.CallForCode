@@ -13,6 +13,7 @@ namespace Hackthon
             : base(options)
         {
         }
+        public DbSet<Projeto> Projeto { get; set; }
     }
 
 }

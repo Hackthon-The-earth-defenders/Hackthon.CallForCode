@@ -3,7 +3,9 @@ using Hackthon.Resources;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Hackthon.Models
 {
@@ -37,6 +39,9 @@ namespace Hackthon.Models
         [MaxLength(200, ErrorMessageResourceType = typeof(TextosValidacao), ErrorMessageResourceName = nameof(TextosValidacao.MaxLength))]
         [Display(Name = "Atividade Economica")]
         public string AtividadeEconomica { get; set; }
+
+        [JsonIgnore]
+        public ICollection<Projeto> Projetos { get; set; }
 
     }
 }

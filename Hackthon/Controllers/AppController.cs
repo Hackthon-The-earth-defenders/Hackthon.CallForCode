@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hackthon.Controllers
 {
-    [Authorize]
+   //[Authorize]
     public class AppController : Controller
     {
         public IActionResult Index()

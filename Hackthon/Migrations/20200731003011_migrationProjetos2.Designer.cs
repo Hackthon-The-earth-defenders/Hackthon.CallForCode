@@ -4,14 +4,16 @@ using Hackthon;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Hackthon.Migrations
 {
     [DbContext(typeof(HackthonDbContext))]
-    partial class HackthonDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200731003011_migrationProjetos2")]
+    partial class migrationProjetos2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

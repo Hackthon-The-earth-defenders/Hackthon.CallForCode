@@ -18,11 +18,12 @@ namespace Hackthon.Controllers
         private readonly HackthonDbContext _context;
 
 
-        public AccountController(HackthonDbContext context, UserManager<Usuario> userManager, RoleManager<Funcao> roleManager)
+        public AccountController(HackthonDbContext context, UserManager<Usuario> userManager, RoleManager<Funcao> roleManager, SignInManager<Usuario> signInManager)
         {
             _context = context;
             _userManager = userManager;
             _roleManager = roleManager;
+            _signInManager = signInManager;
         }
 
 
@@ -40,9 +41,10 @@ namespace Hackthon.Controllers
             if (ModelState.IsValid)
             {
 
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
                 {
+                    return RedirectToAction(nameof(AppController.Index), "App");
                     return RedirectToLocal(returnUrl);
                 }
               

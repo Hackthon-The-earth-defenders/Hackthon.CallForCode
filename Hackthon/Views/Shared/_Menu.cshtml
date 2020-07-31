@@ -16,24 +16,19 @@
             </a>
         </li>
 
-        <li is-active-route asp-controller="Individuos">
+        <li is-active-route asp-controller="Projetos">
             <a href="#">
-                <i class="fa-lg fa-fw fas fa-cube"></i> <span class="menu-item-parent">Indivíduo</span>
+                <i class="fa-lg fa-fw fas fa-cube"></i> <span class="menu-item-parent">Projetos</span>
             </a>
             <ul>
-                <li is-active-route asp-controller="Individuos" asp-action="Index">
-                    <a asp-controller="Individuos" asp-action="Index" title="Listagem dos indíviduos">
+                <li is-active-route asp-controller="Projetos" asp-action="Index">
+                    <a asp-controller="Projetos" asp-action="Index" title="Listagem dos Projetos">
                         <i class="fas fa-lg fa-fw fa-gear"></i> <span class="menu-item-parent">Listar</span>
                     </a>
                 </li>
-                <li is-active-route asp-controller="Individuos" asp-action="create">
-                    <a asp-controller="Individuos" asp-action="create" title="Cadastrar novo indivíduo">
+                <li is-active-route asp-controller="Projetos" asp-action="create">
+                    <a asp-controller="Projetos" asp-action="create" title="Cadastrar novo Projetos">
                         <i class="fas fa-lg fa-fw fa-picture-o"></i> <span class="menu-item-parent">Cadastrar</span>
-                    </a>
-                </li>
-                <li is-active-route asp-controller="Interesses" asp-action="create">
-                    <a asp-controller="Interesses" asp-action="create" title="Ocorrência">
-                        <i class="fas fa-lg fa-fw fa-picture-o"></i> <span class="menu-item-parent">Ocorrência</span>
                     </a>
                 </li>
             </ul>
