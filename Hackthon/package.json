@@ -33,7 +33,7 @@
         "jquery-ajax-unobtrusive": "^3.2.6",
         "jquery-ui-dist": "^1.12.1",
         "jquery-ui-touch-punch": "^0.2.3",
-        "jquery-validation": "^1.19.0",
+        "jquery-validation": "^1.19.4",
         "jquery-validation-unobtrusive": "^3.2.11",
         "jquery.maskedinput": "^1.4.1",
         "moment": "^2.24.0",
