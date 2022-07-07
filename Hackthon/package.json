@@ -36,7 +36,7 @@
         "jquery-validation": "^1.19.0",
         "jquery-validation-unobtrusive": "^3.2.11",
         "jquery.maskedinput": "^1.4.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "normalize.css": "^8.0.1",
         "pace-js": "^1.0.2",
         "select2": "^4.0.12",
